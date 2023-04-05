@@ -13,7 +13,7 @@ const [toggleMenu, setToggleMenu] = useState(false);
 
 
   return (
-    <header  className='flex items-center justify-between p-6 border-b border-slate-400 max-w-5xl m-auto' >
+    <header  className='flex items-center justify-between p-4 border-b text-slate-600 border-slate-400 max-w-5xl m-auto' >
    <div className='flex items-center justify-start gap-6'>
     <ul className='flex justify-center gap-6'>
   {!toggleMenu && <li  className='lg:hidden cursor-pointer'> <button onClick={() => setToggleMenu(true)}><AiOutlineMenu/></button></li>}

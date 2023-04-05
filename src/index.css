@@ -3,6 +3,8 @@
 @tailwind utilities;
   
 body {
+  padding: 0;
+  margin: 0;
   font-family: "Kumbh Sans", sans-serif;
   height: 100vh;
  
@@ -35,6 +37,19 @@ nav ul li{
 .close{
   @apply fixed top-8 right-32 md:right-72  md:text-2xl w-20;
   z-index: 999;
+}
+
+nav{
+  @apply lg:relative lg:top-0 lg:left-0 lg:bg-transparent
+}
+nav.drop{
+  @apply lg:bg-transparent lg:shadow-none lg:p-0 lg:z-0
+}
+nav ul{
+  @apply lg:flex lg:flex-row lg:justify-center lg:gap-0 lg:mt-1.5
+}
+nav ul li{
+  @apply lg:font-normal lg:text-sm
 }
 
 

@@ -40,12 +40,12 @@ const handleMinus = () => {
 
 
   return (
-      <section className='max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:pb-4 lg:mt-4 lg:place-items-center' >
+      <section className='max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:pb-4 lg:mt-4 lg:items-center' >
         <article>
           <div className='lg:hidden'>
           {product.map((item, index) => (
             <div key={item.id} className={slide === index + 1 ? "relative" : "hidden" }>
-            <img src={item.mainImage} alt="" className=' w-full lg:rounded-2xl '></img>
+            <img src={item.mainImage} alt="" className=' w-84 lg:rounded-2xl '></img>
             <ul>  
               <li><button onClick={preSlide} className='bg-white mx-2 rounded-full p-5 shadow absolute left-0 top-1/2  m-auto lg:hidden'><FaChevronLeft /></button></li>
               <li><button onClick={nextSlide} className='bg-white mx-2 rounded-full p-5 shadow absolute right-0 top-1/2 m-auto lg:hidden'><FaChevronRight /></button></li>
@@ -54,7 +54,7 @@ const handleMinus = () => {
             ))}
           </div>
           <div  className='hidden lg:block '>
-          <img src={mainImage} alt="" className=' lg:w-full lg:rounded-2xl '></img>
+          <img src={mainImage} alt="" className='lg:w-full lg:rounded-2xl '></img>
           </div>
           <ul className=' hidden lg:flex items-center flex-wrap justify-start gap-2'>
             {product.map((item, index) => (
@@ -66,7 +66,7 @@ const handleMinus = () => {
         </article>
         <article className='flex flex-col mx-6 m-auto'>
           <h2 className='bg-slate-100 inline-block rounded w-1/2 mb-3 tracking-wide text-orange-400 px-2 font-bold md:text-lg lg:text-xs text-sm' >SNEAKER COMPANY</h2>
-          <h1 className='text-3xl text-slate-800 font-bold mt-2 mb-2'>Fall Limited Sneaker</h1>
+          <h1 className='text-3xl text-slate-800 font-bold mt-2 mb-3'>Fall Limited Sneaker</h1>
           <p className='text-slate-500 leading-relaxed mb-2 text-sm md:text-lg lg:text-xs font-thin'>This low profile sneakers are your perfect casual wear companion. Featuring a durable rubber 
             outer sole, they will withstand everything the weather can offer.
           </p>
