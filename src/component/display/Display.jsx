@@ -67,7 +67,7 @@ const handleMinus = () => {
         <article className='flex flex-col mx-6 m-auto'>
           <h2 className='bg-slate-100 inline-block rounded w-1/2 mb-3 tracking-wide text-orange-400 px-2 font-bold md:text-lg lg:text-xs text-sm' >SNEAKER COMPANY</h2>
           <h1 className='text-3xl text-slate-800 font-bold mt-2 mb-3'>Fall Limited Sneaker</h1>
-          <p className='text-slate-500 leading-relaxed mb-2 text-sm md:text-lg lg:text-xs font-thin'>This low profile sneakers are your perfect casual wear companion. Featuring a durable rubber 
+          <p className='text-slate-600 leading-relaxed mb-2 text-sm md:text-lg lg:text-xs font-thin'>This low profile sneakers are your perfect casual wear companion. Featuring a durable rubber 
             outer sole, they will withstand everything the weather can offer.
           </p>
           <div className='flex items-center justify-start gap-4 mt-2'>
