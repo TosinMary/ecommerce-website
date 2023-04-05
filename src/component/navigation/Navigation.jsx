@@ -25,11 +25,11 @@ const [toggleMenu, setToggleMenu] = useState(false);
     <nav className={toggleMenu && "drop" }>
      
       <ul className=''>
-        <li>Collection</li>
-        <li>Men</li>
-        <li>Women</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li><a>Collection</a></li>
+        <li><a>Men</a></li>
+        <li><a>Women</a></li>
+        <li><a>About</a></li>
+        <li><a>Contact</a></li>
       </ul>
     </nav>
    </div>

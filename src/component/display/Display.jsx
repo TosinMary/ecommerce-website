@@ -70,21 +70,21 @@ const handleMinus = () => {
           <p className='text-slate-500 leading-relaxed mb-2 text-sm md:text-lg lg:text-xs font-thin'>This low profile sneakers are your perfect casual wear companion. Featuring a durable rubber 
             outer sole, they will withstand everything the weather can offer.
           </p>
-          <div className='flex items-center justify-start gap-4 mb-1'>
+          <div className='flex items-center justify-start gap-4 mt-2'>
           <p className='text-slate-800 font-bold text-lg'>$125.00</p>
           <p className='bg-orange-100 text-orange-400 text-xs font-light'>50%</p>
           </div>
           <p className='text-slate-400 text-xs md:text-sm '><s>$250.00</s></p>
           
           <div className='lg:flex flex-row gap-4'>
-            <div className='flex w-full my-4 justify-between items-center gap-6 bg-slate-100 rounded-xl p-2 '>
+            <div className='flex w-full my-7 justify-between items-center gap-6 bg-slate-100 rounded-xl p-2 '>
             <BiMinus className='cursor-pointer' onClick={handleMinus} />
             <p className='text-slate-900 text-sm md:text-lg'>{amount}</p>
             <BiPlus className='cursor-pointer' onClick={() => {
               setAmount(amount + 1)
             }} />
             </div>
-            <div className='flex p-2  md:text-lg mb-4 w-full m-auto justify-center items-center gap-3  bg-orange-400 text-white  rounded-xl cursor-pointer hover:bg-orange-600 transition-all duration-200'>
+            <div className='flex p-2  md:text-lg my-7 w-full m-auto justify-center items-center gap-3  bg-orange-400 text-white  rounded-xl cursor-pointer hover:bg-orange-600 transition-all duration-200'>
               <img className='w-4 h-4 text-center text-white' src={cart} alt="cart-icon"></img>
             <button className=''>Add to cart</button>
             </div>

@@ -49,7 +49,10 @@ nav ul{
   @apply lg:flex lg:flex-row lg:justify-center lg:gap-0 lg:mt-1.5
 }
 nav ul li{
-  @apply lg:font-normal lg:text-sm
+  @apply lg:font-normal lg:text-sm 
+}
+nav ul li a{
+  @apply  lg:hover:border-b-orange-400 lg:hover:border-b-4 lg:hover:pb-8
 }
 
 
