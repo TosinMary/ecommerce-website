@@ -3,8 +3,8 @@ import {useState} from 'react';
 import { data } from '../../data';
 import { BiMinus } from 'react-icons/bi';
 import { BiPlus } from 'react-icons/bi';
-import { FaChevronLeft} from 'react-icons/fa';
-import { FaChevronRight} from 'react-icons/fa'
+import {FaChevronLeft} from 'react-icons/fa'
+import { FaChevronRight } from 'react-icons/fa';
 import cart from '../../assets/icon-cart.svg';
 
 const Display = () => {
