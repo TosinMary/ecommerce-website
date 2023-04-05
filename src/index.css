@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+  
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  height: 100vh;
+ 
+
+}
+nav{
+  position: fixed;
+  top: 0;
+  left: -100vw;
+  width: 60%;
+  height: 100%;
+  z-index: 99;
+  transition: none 0.2 s ease-in-out;
+  @apply lg:flex lg:flex-row ;
+ 
+
+}
+nav.drop{
+  top: 0;
+  left: 0;
+  background-color: white;
+  @apply shadow-2xl p-8 lg:bg-transparent lg:font-normal lg:text-base lg:z-0 ;
+}
+nav ul{
+  @apply flex flex-col items-start gap-4 mt-10 lg:flex-row;
+}
+nav ul li{
+  @apply font-extrabold cursor-pointer md:text-2xl md:p-4;
+}
+.close{
+  @apply fixed top-8 right-32 md:right-72  md:text-2xl w-20;
+  z-index: 999;
+}
+
+
+img{
+  width: 100%;
+}
+ul{
+  list-style-type: none;
+}
