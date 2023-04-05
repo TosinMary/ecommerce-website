@@ -15,6 +15,7 @@ const [slide, setSlide] = useState(1);
 const [amount, setAmount] = useState(0);
 
 
+
 const nextSlide = () => {
   if (slide !== product.length) {
     setSlide(slide + 1);
@@ -84,9 +85,9 @@ const handleMinus = () => {
               setAmount(amount + 1)
             }} />
             </div>
-            <div className='flex p-2  md:text-lg my-7 w-full m-auto justify-center items-center gap-3  bg-orange-400 text-white  rounded-xl cursor-pointer hover:bg-orange-600 transition-all duration-200'>
-              <img className='w-4 h-4 text-center text-white' src={cart} alt="cart-icon"></img>
-            <button className=''>Add to cart</button>
+            <div onClick={() => setAmount(0)} className='flex p-2  md:text-lg my-7 w-full m-auto justify-center items-center gap-3  bg-orange-400 text-white  rounded-xl cursor-pointer hover:bg-orange-600 transition-all duration-200'>
+              <img  className='w-4 h-4 text-center text-white' src={cart} alt="cart-icon"></img>
+            <button  className=''>Add to cart</button>
             </div>
             </div>
         </article>
